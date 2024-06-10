@@ -18,7 +18,7 @@ contract Eligibility {
 
     function DoRequire() public view {
 
-        require(age > 18, "You are NOT eligible to vote");
+        require(age >= 18, "You are NOT eligible to vote");
 
         console.log("Congratulations! You are eligible to vote.");
     }
